@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h2 class="logo-heading">Emrit Diyal</h2>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars hamburger-icon"></i>
+        <i class="fas fa-times cross-icon"></i>
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
+          <li class="menu-list-items"><a class="links" href="#portfolio">Portfolio</a></li>
+          <li class="menu-list-items"><a class="links" href="#about">About</a></li>
+          <li class="menu-list-items"><a class="links" href="#services">Services</a></li>
+          <li class="menu-list-items"><a class="links" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="intro">
+      <div class="headings">
+        <h3 class="greet-heading">Hello, I'm</h3>
+        <h1 class="my-heading">Emrit Diyal</h1>
+        <h4 class="sub-heading">A Software Engineer with 3 years of Experience.</h4>
+      </div>
+      <div class="intro-buttons">
+        <button class="btn common-btn">Hire Me</button>
+        <button class="btn ghost-btn">Get Resume</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-heading text-center">
+      <h1 class="my-heading">Featured Portfolio</h1>
+    </div>
+    <div class="portfolio-content">
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image"> <!-- placeholder --> </div>
+            <h3 class="greet-heading blue-text">Web Design</h3>
+            <p class="small-para blue-text">Designing</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image"></div>
+            <h3 class="greet-heading blue-text">Web Development</h3>
+            <p class="small-para blue-text">Development</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image"></div>
+            <h3 class="greet-heading blue-text">SEO</h3>
+            <p class="small-para blue-text">Optimization</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image"></div>
+            <h3 class="greet-heading blue-text">Content Writing</h3>
+            <p class="small-para blue-text">Writing</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image"></div>
+            <h3 class="greet-heading blue-text">WordPress Dev</h3>
+            <p class="small-para blue-text">CMS</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image"></div>
+            <h3 class="greet-heading blue-text">Video Editing</h3>
+            <p class="small-para blue-text">Editing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h1 class="my-heading">About Me</h1>
+      <p class="lead-para">Brief bio or description goes here.</p>
+      <p>Additional details about skills, experience, or interests.</p>
+    </div>
+    <div class="about-image">
+      <div class="image"></div> <!-- placeholder -->
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="services-heading text-center">
+      <h1 class="my-heading">My Services</h1>
+    </div>
+    <div class="services-content">
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="greet-heading blue-text">Web Design</h3>
+            <p class="small-para">Short description of service.</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon"><i class="fas fa-code"></i></div>
+            <h3 class="greet-heading blue-text">Web Development</h3>
+            <p class="small-para">Short description of service.</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="greet-heading blue-text">SEO</h3>
+            <p class="small-para">Short description of service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-heading text-center">
+      <h1 class="my-heading">Contact Me</h1>
+    </div>
+    <div class="contact-content">
+      <div class="contact-form-container">
+        <h1 class="greet-heading">Get In Touch</h1>
+        <form class="contact-form">
+          <input class="form-controls" type="text" placeholder="Your Name">
+          <input class="form-controls" type="email" placeholder="Your Email">
+          <input class="form-controls" type="tel" placeholder="Your Phone">
+          <textarea class="form-controls" placeholder="Your Message" rows="5"></textarea>
+          <input class="form-btn btn common-btn" type="submit" value="Send Message">
+        </form>
+      </div>
+      <div class="contact-details">
+        <h1 class="greet-heading">My Contact Details</h1>
+        <div class="details">
+          <h5 class="contact-heading">EMAIL</h5>
+          <p class="contact-text">example@gmail.com</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">PHONE</h5>
+          <p class="contact-text">+91 0123456789</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">ADDRESS</h5>
+          <p class="contact-text">San Francisco, CA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content text-center">
+      <h4>© 2025 All rights reserved | Built by Emrit Diyal</h4>
+      <div class="social-links">
+        <a class="footer-links" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="footer-links" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="footer-links" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="footer-links" href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
