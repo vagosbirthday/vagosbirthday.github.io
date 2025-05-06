@@ -1,22 +1,21 @@
-/* script.js */
+// script.js
 
-// Toggle mobile menu visibility
-const hamburger = document.getElementById('hamburger');
-const menu = document.querySelector('.menu');
-
-hamburger.addEventListener('click', () => {
-menu.classList.toggle('open');
-hamburger.querySelector('.hamburger-icon').classList.toggle('hidden');
-hamburger.querySelector('.cross-icon').classList.toggle('hidden');
-});
-
-// Close menu when a link is clicked (mobile)
-document.querySelectorAll('.links').forEach(link => {
-link.addEventListener('click', () => {
-if (menu.classList.contains('open')) {
-menu.classList.remove('open');
-hamburger.querySelector('.hamburger-icon').classList.remove('hidden');
-hamburger.querySelector('.cross-icon').classList.add('hidden');
-}
-});
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const menuList  = document.querySelector('.menu-list');
+  
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      menuList.classList.toggle('menu-open');
+    });
+  
+    document.querySelectorAll('.menu-list .links').forEach(link => {
+      link.addEventListener('click', () => {
+        if (menuList.classList.contains('menu-open')) {
+          hamburger.classList.remove('open');
+          menuList.classList.remove('menu-open');
+        }
+      });
+    });
+  });
+  
