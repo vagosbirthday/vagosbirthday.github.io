@@ -1,20 +1,38 @@
+/* responsive.css */
+
+/* Show hamburger and hide menu on tablets and smaller */
 @media (max-width: 992px) {
-    .navbar .menu {
-      display: none;
+    .menu {
+    display: none;
     }
     .hamburger {
-      display: block;
+    display: block;
     }
-  }
-  
-  @media (min-width: 993px) {
+    .navbar {
+    padding: 0.75rem 1rem;
+    }
+    }
+    
+    /* Restore menu and hide hamburger on larger screens */
+    @media (min-width: 993px) {
     .hamburger {
-      display: none;
+    display: none;
     }
-  }
-  
-  /* Simple smooth-scroll for anchored links */
-  html {
+    .menu {
+    display: flex;
+    }
+    }
+    
+    /* Stack about/contact columns on mobile */
+    @media (max-width: 768px) {
+    .about-container,
+    .contact-container {
+    flex-direction: column;
+    text-align: center;
+    }
+    }
+    
+    /* Smooth scroll for anchor links */
+    html {
     scroll-behavior: smooth;
-  }
-  
+    }
