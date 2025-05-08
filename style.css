@@ -160,6 +160,46 @@ body {
   color: var(--color-secondary);
 }
 
+/* Custom Buttons */
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Resume Button */
+.resume-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+.resume-btn:hover {
+  background-color: #388E3C;
+}
+
+/* LinkedIn Button */
+.linkedin-btn {
+  background-color: #0077b5;
+  color: white;
+}
+.linkedin-btn:hover {
+  background-color: #005983;
+}
+
+/* Icon inside button */
+.custom-btn i {
+  font-size: 1.1rem;
+}
+
+
 /* Divider */
 .section-divider {
   height: 4px; width: 80px;
