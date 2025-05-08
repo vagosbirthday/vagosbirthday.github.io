@@ -1,10 +1,11 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carlos Daniel Aguilar Dominguez | Network Administrator Portfolio</title>
+
+  <!-- Font Awesome for Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,6 +13,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -33,49 +36,43 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container text-center">
       <h3 class="greet-heading">Hello, I'm</h3>
       <h1 class="my-heading">Carlos Daniel Aguilar Dominguez</h1>
       <h4 class="sub-heading">Aspiring Network &amp; Systems Administrator</h4>
       <div class="intro-buttons my-2rem">
-        <!-- Resume Download -->
         <a href="assets/CarlosAguilar_Resume.pdf" download class="custom-btn resume-btn">
           <i class="fas fa-download"></i> Get Resume
         </a>
-      
-        <!-- LinkedIn Profile -->
         <a href="https://www.linkedin.com/in/carlosdanielaguilardominguez/" target="_blank" class="custom-btn linkedin-btn">
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </div>
-      
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="projects" class="section-portfolio section-light py-4rem">
     <div class="container text-center">
       <h2 class="section-title">Key Projects</h2>
       <div class="section-divider"></div>
       <div class="grid my-2rem">
         <div class="port-card">
-          <img src="image/CicataNexus.png" alt="Nexus Cicata Platform">
+          <img src="image/CicataNexus.png" alt="Nexus Cicata Platform" />
           <h3>Nexus Cicata</h3>
           <p>
-            A plataform for Cicata, for quality-life for administators, teachers and students.  0
-            React on the front-end, Node.js/Express on the back-end,  
-            MongoDB for data, JWT-secured auth.
+            A secure RESTful API for managing laboratory assets with full CRUD, JWT-based auth, validation (like unique barcodes), and support for a front-end inventory dashboard.
           </p>
         </div>
         <div class="port-card">
-          <img src="..." alt="Server Configuration">
+          <img src="..." alt="Server Configuration" />
           <h3>Server Configuration</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="port-card">
-          <img src="..." alt="Security Audit">
+          <img src="..." alt="Security Audit" />
           <h3>Security Audit</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
@@ -83,33 +80,100 @@
     </div>
   </section>
 
-<!-- About Section -->
-<section id="about" class="section-about py-4rem">
-  <div class="container">
-    <div class="about-text">
-      <h2 class="section-title">About Me</h2>
-      <div class="section-divider"></div>
-      <p>
-        Hi! I’m <strong>Carlos Daniel Aguilar Dominguez</strong>, currently pursuing a degree in Computer Technologies Engineering at Tecnológico de Monterrey. I’m driven by a passion for hands-on server work, network architecture, and systems administration.
-      </p>
-      <p>
-        My technical toolkit spans <strong>Kotlin</strong> (where I build and experiment daily) and core networking protocols (TCP/IP, DNS, DHCP). I’ve also developed full-stack solutions—React front-ends talking to Node.js/Express back-ends—deployed on my own on-premises hardware.
-      </p>
-      <p>
-        Lately I’ve been deepening my skills in <strong>network automation</strong> (Ansible, shell scripting) and exploring <strong>IoT</strong> edge-computing scenarios—everything that prepares me for a role as a Network &amp; Systems Administrator in a data-center or enterprise environment.
-      </p>
-      <p>
-        I’m eager to take on new challenges: designing resilient networks, optimizing server performance, and ensuring 24/7 uptime. If you’re looking for someone who loves to get hands-on with hardware, master protocols, and keep systems humming, let’s connect!
-      </p>
+  <!-- About + Flip-Cards Section -->
+  <section id="about" class="section-about py-4rem">
+    <div class="container about-flipgrid">
+
+      <!-- About Me -->
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+        <p>
+          Hi! I’m <strong>Carlos Daniel Aguilar Dominguez</strong>, pursuing Computer Technologies Engineering at Tecnológico de Monterrey. I love hands-on server work, network architecture, and systems administration.
+        </p>
+        <p>
+          I’ve built full-stack platforms (React + Node.js/Express + MongoDB) and deployed them on my own servers. I’m also diving deep into Kotlin, Ansible automation, and the hardware basics of physical racks.
+        </p>
+      </div>
+
+      <!-- Skills Flip Cards -->
+      <div class="flip-card-grid">
+
+        <!-- Programming -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Programming</h3>
+              <i class="fas fa-code fa-2x"></i>
+            </div>
+            <div class="flip-back">
+              <ul>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fas fa-angle-double-right"></i> C++</li>
+                <li><i class="fab fa-kotlin"></i> Kotlin</li>
+                <li><i class="fas fa-hashtag"></i> C#</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web & Mobile -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Web & Mobile</h3>
+              <i class="fas fa-laptop-code fa-2x"></i>
+            </div>
+            <div class="flip-back">
+              <ul>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-kotlin"></i> Kotlin</li>
+                <li><i class="fas fa-server"></i> Express</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Databases</h3>
+              <i class="fas fa-database fa-2x"></i>
+            </div>
+            <div class="flip-back">
+              <ul>
+                <li><i class="fas fa-database"></i> MySQL</li>
+                <li><i class="fas fa-leaf"></i> MongoDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Tools</h3>
+              <i class="fas fa-tools fa-2x"></i>
+            </div>
+            <div class="flip-back">
+              <ul>
+                <li><i class="fab fa-git-alt"></i> Git</li>
+                <li><i class="fab fa-github"></i> GitHub</li>
+                <li><i class="fas fa-code-branch"></i> VS Code</li>
+                <li><i class="fab fa-figma"></i> Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="about-image">
-    </div>
-  </div>
-</section>
+  </section>
 
-
-
-  <!-- Services -->
+  <!-- Services Section -->
   <section id="services" class="section-services section-light py-4rem">
     <div class="container text-center">
       <h2 class="section-title">Services</h2>
@@ -134,15 +198,15 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="section-contact section-dark py-4rem">
     <div class="container">
       <h2 class="section-title text-center">Contact Me</h2>
       <div class="section-divider"></div>
       <div class="contact-container my-2rem">
         <form class="contact-form">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
           <textarea rows="5" placeholder="Message"></textarea>
           <button class="btn btn-primary" type="submit">Send</button>
         </form>
