@@ -345,6 +345,31 @@ body {
   background: var(--color-primary);
 }
 
+.section-contact .contact-list {
+  list-style: none;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+.section-contact .contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.section-contact .contact-list li i {
+  margin-right: 0.75rem;
+  color: var(--color-accent);
+}
+.section-contact .contact-list li a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+.section-contact .contact-list li a:hover {
+  text-decoration: underline;
+}
+
+
 /* =====================
    Footer
 ==================== */
