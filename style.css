@@ -235,7 +235,7 @@ body {
 .flip-inner {
   position: relative;
   width: 100%;
-  height: 220px;
+  min-height: 220px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
@@ -246,13 +246,13 @@ body {
 .flip-back {
   position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: 220px;
   backface-visibility: hidden;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
@@ -289,6 +289,71 @@ body {
   font-size: 0.85rem;
   color: var(--color-text-light);
 }
+
+/* Si falta */
+
+.flip-back {
+  overflow-y: auto;
+}
+
+/* Progress bars inside flip-cards */
+.skill-bars {
+  width: 100%;
+  margin-top: 1rem;
+}
+.bar-wrapper {
+  margin-bottom: 0.75rem;
+}
+.bar-label {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.25rem;
+}
+.bar {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 8px;
+}
+.fill {
+  width: 0;
+  height: 100%;
+  background: var(--color-accent);
+  animation: fillBar 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+@keyframes fillBar {
+  to { width: var(--level); }
+}
+
+/* Certifications list */
+.certifications {
+  margin-top: 1rem;
+  text-align: left;
+}
+.certifications h4 {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+.certifications ul {
+  list-style: none;
+  padding-left: 0;
+}
+.certifications li {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.25rem;
+  position: relative;
+  padding-left: 1rem;
+}
+.certifications li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
 
 /* =====================
    Services Section
